@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cleaning</title>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* Start Reviews Section  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --topHeader: #ecf6fe;
+    --blueColor: #008aff;
+    --yellowColor: #ffe824;
+    --goldColor: #f7b74d;
+    --headingColor: #13287e;
+    --textColor: #474747;
+    --whiteColor: #ffffff;
+}
+
+html {
+    
+    font-size: 62.5%;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+
+
+h2 {
+    font-size:1.4rem;
+    font-weight: 400;
+    color:#1DB1BA;
+}
+
+@media(min-width: 768px) {
+    h2 {
+        font-size: 2.3rem;
+    }
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--textColor);
+
+}
+
+@media(min-width: 768px) {
+    p {
+        font-size: 2rem;
+    }
+}
+
+section {
+    padding: 11rem 0;
+}
+.reviews {
+    background-image: url('./static/img/background.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.reviews::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255 255 255 / .7);
+}
+
+.reviews .container h2 {
+    text-align: center;
+    position: relative;
+}
+.reviews .container p {
+    color:black;/* Set to a light color */
+}
+.reviews::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value as needed */
+}
+
+
+.about {
+    padding: 10rem 0;
+}
+
+.about .container h2{
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.about .container .about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(24.8rem, 100%), 1fr));
+    gap: 2rem;
+    margin-top:-8rem;
+}
+
+.about .container .about-container .box {
+    padding: 2rem 1.1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about .container .about-container .box:hover {
+    box-shadow: 0 .1rem .5em .2rem rgba(0 0 0 / 20%);
+    transform: translateY(2rem);
+}
+
+.about .container .about-container .box i {
+    font-size: 4rem;
+    color: var(--blueColor);
+    margin-bottom: 4rem;
+}
+
+.about .container .about-container .box h3 {
+    font-size: 2.8rem;
+    color: var(--headingColor);
+    text-transform: capitalize;
+    position: relative;
+}
+
+.about .container .about-container .box h3::before {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    right: 27%;
+    height: .2rem;
+    width: 45%;
+    background-color: var(--yellowColor);
+}
+
+.about .container .about-container .box p {
+    margin-top: 2rem;
+    color:black;
+}
+.heading2{
+    width:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    margin:20px auto;
+  
+  
+    
+   }
+   .heading2 h1{
+    font-size:50px;
+    color: #1E4272;
+    margin-bottom:25px;
+    position:relative;
+    text-align:center;
+   }
+    
+ 
+/* End About Section  */
+/* Add this style block to your existing styles in the <style> tag 
+
+    .about .container .about-container .box {
+        padding: 2rem 1.1rem;
+        text-align: center;
+        cursor: pointer;
+        animation: cardAnimation 0.8s ease-in-out;
+    }
+    
+    @keyframes cardAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+*/
+/* Update this style block in your existing styles in the <style> tag */
+    /* Update this style block in your existing styles in the <style> tag */
+
+/* Update this style block in your existing styles in the <style> tag */
+
+    .about .container .about-container .box {
+        padding: 2rem 1.1rem;
+        text-align: center;
+        cursor: pointer;
+        animation: cardAnimation 0.8s ease-in-out;
+        transition: background-color 0.3s ease-in-out; /* Add transition for smooth color change */
+    }
+    
+    .about .container .about-container .box:hover {
+        background-color:#1DB1BA; /* Change the color on hover */
+    }
+    
+    @keyframes cardAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
+    
+
+
+
+
+    </style>
+</head>
+
+<body>
+  
+   
+    <section class="reviews" id="reviews">
+       
+        <div class="container">
+            <div class="heading2">
+                <h1>WHY CHOSSEN US ?</h1>
+    
+            <h2>"Big Effort Cleaning Company: Where Dedication Meets Shine.Transforming Spaces with Immaculate Precision and a Commitment to Excellence.
+            
+        Big Effort Cleaning Company: Crafting Brilliance, One Clean Space at a Time.Where Our Passion for Cleanliness Meets Your Expectations, Exceeds Standards, and Redefines Freshness"</h2>
+            
+        </div>
+        <!-- Start About Section  -->
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>premium services</h3>
+                    <p>lorem ipsum dolor consectrtur adipisicing elit sedit dout.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>cost</h3>
+                    <p>lorem ipsum dolor consectrtur adipisicing elit sedit dout.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-hand-holding"></i>
+                    <h3>eco friendly</h3>
+                    <p>lorem ipsum dolor consectrtur adipisicing elit sedit dout.</p>
+                </div>
+                <div class="box">
+                    <i class="fab fa-bitbucket"></i>
+                    <h3>special equipment</h3>
+                    <p>lorem ipsum dolor consectrtur adipisicing elit sedit dout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+        
+</body>
+    </html>

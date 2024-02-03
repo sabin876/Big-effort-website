@@ -1,3 +1,12 @@
+//nav bar for mobile view
+const menuBtn = document.querySelector('.menu-bar');
+const menu = document.querySelector('nav');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuBtn.classList.toggle('fa-times');
+});
+
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');

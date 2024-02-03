@@ -1113,3 +1113,106 @@ section {
         width: 1320px;
     }
 }
+/* card section */
+
+/* Float four columns side by side */
+.service-card-container {
+  margin-block: 10rem;
+}
+
+.card-heading {
+  color: var(--primary-color);
+}
+
+:has(>.underline-heading) {
+  width: fit-content;
+  margin: auto;
+}
+/*
+.underline-heading::after {
+  content: '';
+  height:8px;
+  background-color: var(--primary-color);
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+*/
+.card-column {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.card-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Clear floats after the columns */
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.serviceMain {
+  background-color: #BFE6E6;
+  border-radius: 15px;
+  padding:9px;
+}
+
+.serviceImg{
+  min-height: 40%;
+}
+
+.serviceImg > img {
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.servicesTitle {
+  font-weight: bold;
+  color: black;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.serviceContent {
+  margin-top: 1.3rem;
+}
+
+
+.readMoreButton>button {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin-block: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 13px 17px;
+
+}
+
+.readMoreButton>button:hover {
+  background-color: var(--secondary-color-lite);
+
+}
+
+.readMoreButton {
+  display: flex;
+  justify-content: center;
+}
+
+.cardContent {
+  line-height: 1.5rem;
+  margin-block: 8px;
+  font-weight: bold;
+}
+
+/* card ends here */

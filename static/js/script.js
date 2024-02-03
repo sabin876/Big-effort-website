@@ -4,24 +4,27 @@ let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
 // config param
-let countItem = items.length;
-let itemActive = 0;
+// let countItem = items.length;
+// let itemActive = 0;
 // event next click
-next.onclick = function () {
-    itemActive = itemActive + 1;
-    if (itemActive >= countItem) {
-        itemActive = 0;
-    }
-    showSlider();
-}
+// next.onclick = function () {
+//     itemActive = itemActive + 1;
+//     if (itemActive >= countItem) {
+//         itemActive = 0;
+//     }
+//     showSlider();
+// }
 //event prev click
-prev.onclick = function () {
-    itemActive = itemActive - 1;
-    if (itemActive < 0) {
-        itemActive = countItem - 1;
-    }
-    showSlider();
-}
+
+// prev.onclick = function () {
+//     itemActive = itemActive - 1;
+//     if (itemActive < 0) {
+//         itemActive = countItem - 1;
+//     }
+//     showSlider();
+// }
+
+// 
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();

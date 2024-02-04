@@ -314,7 +314,7 @@ header .container nav ul li a:hover {
 }
 
 .home .container {
-  height: 73%;
+  height: 79%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,6 +322,7 @@ header .container nav ul li a:hover {
 
 .home .container .home-text {
   text-align: center;
+  
 }
 
 .home .container .home-text h2 {
@@ -1182,7 +1183,7 @@ section {
 .serviceMain {
   background-color: #BFE6E6;
   border-radius: 15px;
-  padding:9px;
+  padding:15px;
 }
 
 .serviceImg{
@@ -1202,6 +1203,7 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 3px;
+  font-size: 12px;
 }
 
 .serviceContent {
@@ -1212,7 +1214,7 @@ section {
 .readMoreButton>button {
   border-radius: 10px;
   background-color: #20d2d2;
-  margin-block: 18px;
+  margin-block: 3px;
   border: none;
   color: white;
   cursor: pointer;
@@ -1234,6 +1236,7 @@ section {
   line-height: 2.5rem;
   margin-block: 8px;
   font-weight: bold;
+  font-size: 13px;
 }
 
 /* card ends here */

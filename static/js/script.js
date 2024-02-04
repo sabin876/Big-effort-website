@@ -12,6 +12,7 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
+
 // config param
 // let countItem = items.length;
 // let itemActive = 0;

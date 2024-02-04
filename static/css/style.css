@@ -18,7 +18,15 @@
   place-content: center;
   z-index: 9999999;
 }
-
+/*for commercial heading */
+.service-heading {
+  color: #1E4272;
+  text-decoration: chocolate;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 26px;
+  font-size: 25px;
+}
 .page-buffer-loader img {
   animation-name: logo-buffer;
   animation-duration: 1s;
@@ -501,6 +509,12 @@ header .container nav ul li a:hover {
     }
     .about-content .read-more{
         font-size:16px;
+    }
+    .home-content{
+      transform: translateY(-25rem);
+    }
+    .btn{
+      transform: translateY(-21rem);
     }
    }
   
@@ -1050,6 +1064,13 @@ p {
 @media(min-width: 768px) {
     p {
         font-size: 2rem;
+        /*transform: translateY(-15rem);*/
+    }
+    .home-content{
+      transform: translateY(-10rem);
+    }
+    .btn{
+      transform: translateY(-7rem);
     }
 }
 
@@ -1190,7 +1211,7 @@ section {
 
 .readMoreButton>button {
   border-radius: 10px;
-  background-color: var(--secondary-color);
+  background-color: #20d2d2;
   margin-block: 18px;
   border: none;
   color: white;
@@ -1200,7 +1221,7 @@ section {
 }
 
 .readMoreButton>button:hover {
-  background-color: var(--secondary-color-lite);
+  background-color: #203cd2;
 
 }
 
@@ -1210,7 +1231,7 @@ section {
 }
 
 .cardContent {
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   margin-block: 8px;
   font-weight: bold;
 }

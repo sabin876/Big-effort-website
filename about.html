@@ -126,11 +126,6 @@ section {
     cursor: pointer;
 }
 
-.about .container .about-container .box:hover {
-    box-shadow: 0 .1rem .5em .2rem rgba(0 0 0 / 20%);
-    transform: translateY(2rem);
-}
-
 .about .container .about-container .box i {
     font-size: 4rem;
     color: var(--blueColor);
@@ -210,12 +205,15 @@ section {
         text-align: center;
         cursor: pointer;
         animation: cardAnimation 0.8s ease-in-out;
-        transition: background-color 0.3s ease-in-out; /* Add transition for smooth color change */
+        transition: all 0.3s ease-in-out; /* Add transition for smooth color change */
+        outline: 1.6px solid #f2ecec;
+        border-radius: 50px;
     }
-    
-    .about .container .about-container .box:hover {
-        background-color:#1DB1BA; /* Change the color on hover */
+
+    .about .container .about-container .box:hover{
+        box-shadow: 0 0 30px #00000029;
     }
+
     
     @keyframes cardAnimation {
         0% {
@@ -227,14 +225,6 @@ section {
             transform: translateY(0);
         }
     }
-    
-    
-    
-    
-
-
-
-
     </style>
 </head>
 

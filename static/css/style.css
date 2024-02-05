@@ -757,9 +757,11 @@ footer {
 .footer-right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  background: #151515;
   padding-left: 10px;
-  border: 1px solid #222222;
+}
+
+.footer-right form textarea {
+  resize: vertical;
 }
 
 .footer-right form input:focus,

@@ -1266,5 +1266,27 @@ section {
   font-weight: bold;
   font-size: 13px;
 }
+/*for button */
 
+.book-now {
+  width: 49%;
+  color:whitesmoke;
+  background-color: #1345a0;
+  aspect-ratio: 4.5;
+  border-radius: 14px;
+}
+.view-detail {
+  width: 49%;
+  aspect-ratio: 4.5;
+  color: whitesmoke;
+  background-color: #1345a0;
+  border-radius: 14px;
+}
 /* card ends here */
+.single-bottom>button:hover{
+  background-color: #20d2d2;
+  color:white;
+}
+.svg-inline--fa.fa-bookmark {
+  padding-left: 4px;
+}

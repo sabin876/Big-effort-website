@@ -1290,3 +1290,33 @@ section {
 .svg-inline--fa.fa-bookmark {
   padding-left: 4px;
 }
+/* for animating the cards */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.serviceMain {
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-in-out;
+  animation-fill-mode: forwards; 
+  transition: box-shadow 0.3s ease,transform 0.3s ease; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  opacity: 0; /* Initially hide the card */
+ 
+  
+}
+.card-column {
+  margin-top: 50px;
+}
+.serviceMain:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  transform: scale(1.05);
+}

@@ -250,6 +250,11 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+.close-btn{
+  border: none;
+  background-color: #ecf6fe;
+}
+
 
 header .container .menu-bar {
     font-size: 1.6rem;
@@ -1318,5 +1323,5 @@ section {
 }
 .serviceMain:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-  transform: scale(1.05);
+  transform: scale(10.05);
 }

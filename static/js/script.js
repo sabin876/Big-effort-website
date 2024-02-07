@@ -1,11 +1,15 @@
 //nav bar for mobile view
 const menuBtn = document.querySelector('.menu-bar');
-const menu = document.querySelector('nav');
+const menu = document.querySelector('.menu');
+const closeBtn=document.querySelector('.close-btn')
 
 menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    menuBtn.classList.toggle('fa-times');
+    menu.classList.add('active');
+   
 });
+closeBtn.addEventListener('click', ()=>{
+    menu.classList.toggle('active');
+})
 
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -121,7 +125,7 @@ function isInViewport(element) {
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom <= (window.innerHeight || dorcument.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }

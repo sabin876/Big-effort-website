@@ -1,0 +1,16 @@
+.std-btn{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    background-color: #03427a;
+    color: white;
+  }
+  
+  .std-btn:hover{
+    filter: brightness(0.9);
+    color: white;
+  }

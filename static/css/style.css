@@ -183,18 +183,6 @@ p {
   padding: 6rem 0;
 }
 
-/*.btn {
-    background-color: var(--yellowColor);
-    color: var(--textColor);
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    padding: 1.6rem 2rem;
-    border-radius: 2.1rem;
-}
-
-
-
-
 /* Setup Our Container  */
 .container {
   padding-left: 1.5rem;
@@ -572,7 +560,7 @@ header .container nav ul li a:hover {
     transform: translateY(-25rem);
   }
 
-  .btn {
+  .offer-btn {
     transform: translateY(-21rem);
   }
 }
@@ -1138,22 +1126,13 @@ p {
     transform: translateY(-10rem);
   }
 
-  .btn {
+  .offer-btn {
     transform: translateY(-7rem);
   }
 }
 
 section {
   padding: 6rem 0;
-}
-
-.btn {
-  background-color: var(--yellowColor);
-  color: var(--textColor);
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  padding: 1.6rem 2rem;
-  border-radius: 2.1rem;
 }
 
 /* Setup Our Container  */

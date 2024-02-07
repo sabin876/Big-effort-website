@@ -354,10 +354,10 @@
     <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
     
 
-      <script src="./static/js/vendor/script.js"></script>
+      <script src="./static/js/vendor/bootstrap.min.js"></script>
       <script src="./static/js/script.js"></script>
       <script>
-        const loader = document.querySelector(".page-buffer-loader");
+        const loader = document.querySelector(".page-buffer-loader") || document.createElement("span");
         document.onreadystatechange = () => {
           switch (document.readyState) {
             case "interactive", "complete":
@@ -371,7 +371,11 @@
         //nav bar for mobile view
 
       </script>
+      
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     
+     <script src="./static/js/gspAnimations.js"></script>
      
   </body>
 </html>

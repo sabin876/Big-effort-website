@@ -1,4 +1,4 @@
-//nav bar for mobile view
+// //nav bar for mobile view
 const menuBtn = document.querySelector('.menu-bar');
 const menu = document.querySelector('nav');
 
@@ -13,10 +13,10 @@ let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
 
-// config param
+// // config param
 // let countItem = items.length;
 // let itemActive = 0;
-// event next click
+// // event next click
 // next.onclick = function () {
 //     itemActive = itemActive + 1;
 //     if (itemActive >= countItem) {
@@ -24,7 +24,7 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 //     }
 //     showSlider();
 // }
-//event prev click
+// // event prev click
 
 // prev.onclick = function () {
 //     itemActive = itemActive - 1;
@@ -34,30 +34,30 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 //     showSlider();
 // }
 
-//
-// auto run slider
-let refreshInterval = setInterval(() => {
-    next.click();
-}, 5000)
-function showSlider() {
-    // remove item active old
-    let itemActiveOld = document.querySelector('.slider .list .item.active');
-    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-    itemActiveOld.classList.remove('active');
-    thumbnailActiveOld.classList.remove('active');
 
-    // active new item
-    items[itemActive].classList.add('active');
-    thumbnails[itemActive].classList.add('active');
+// // auto run slider
+// // let refreshInterval = setInterval(() => {
+// //     next.click();
+// // }, 5000)
+// // function showSlider() {
+// //     // remove item active old
+// //     let itemActiveOld = document.querySelector('.slider .list .item.active');
+// //     let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+// //     itemActiveOld.classList.remove('active');
+// //     thumbnailActiveOld.classList.remove('active');
 
-    // clear auto time run slider
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => {
-        next.click();
-    }, 5000)
-}
+// //     // active new item
+// //     items[itemActive].classList.add('active');
+// //     thumbnails[itemActive].classList.add('active');
 
-// click thumbnail
+// //     // clear auto time run slider
+// //     clearInterval(refreshInterval);
+// //     refreshInterval = setInterval(() => {
+// //         next.click();
+// //     }, 5000)
+// // }
+
+// // click thumbnail
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
@@ -65,7 +65,7 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
-//testo JS Code
+// //testo JS Code
 let review = document.querySelector('#review'),
     dots = document.querySelectorAll('#review-dots li'),
     reviewContent = document.querySelectorAll('#review-content .review-box'),
@@ -114,31 +114,3 @@ window.onload = function () {
     }
     playSlide(currentSlide);
 }
-//animation for card
-// Function to check if an element is in the viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-  
-  // Function to handle scroll event
-  function handleScroll() {
-    const cards = document.querySelectorAll('.serviceMain');
-    cards.forEach(card => {
-      if (isInViewport(card)) {
-        card.classList.add('visible');
-      }
-    });
-  }
-  
-  // Attach scroll event listener
-  document.addEventListener('scroll', handleScroll);
-  
-  // Trigger handleScroll on page load
-  handleScroll();
-  

@@ -258,6 +258,11 @@ header .container {
   border: none;
   background-color: #ecf6fe;
 }
+@media (min-width:989px) {
+  .close-btn{
+    display: none;
+  }
+}
 
 
 header .container .menu-bar {
@@ -1353,11 +1358,8 @@ section {
 }
 
 .serviceMain:hover {
-<<<<<<< HEAD
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   transform: scale(10.05);
-=======
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
->>>>>>> 3e6c0b241f0ab27e56357ee62d7cfd574e442a3d
 }

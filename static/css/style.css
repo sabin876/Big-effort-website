@@ -183,18 +183,6 @@ p {
   padding: 6rem 0;
 }
 
-/*.btn {
-    background-color: var(--yellowColor);
-    color: var(--textColor);
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    padding: 1.6rem 2rem;
-    border-radius: 2.1rem;
-}
-
-
-
-
 /* Setup Our Container  */
 .container {
   padding-left: 1.5rem;
@@ -522,23 +510,6 @@ header .container nav ul li a:hover {
   animation: fadeInUp 2s ease;
 }
 
-.about-content .read-more {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #1E4272;
-  color: #fff;
-  font-size: 19px;
-  text-decoration: none;
-  border-radius: 10px;
-  margin-top: 15px;
-  transition: 0.3s ease;
-
-}
-
-.about-content .read-more:hover {
-  background-color: #3e8e41;
-}
-
 @media screen and (max-width:768px) {
   .heading2 {
     padding: 0px 20px;
@@ -573,16 +544,12 @@ header .container nav ul li a:hover {
     padding: 0px;
     font-size: 16px;
   }
-
-  .about-content .read-more {
-    font-size: 16px;
-  }
-
+  
   .home-content {
     transform: translateY(-25rem);
   }
 
-  .btn {
+  .offer-btn {
     transform: translateY(-21rem);
   }
 }
@@ -1148,22 +1115,13 @@ p {
     transform: translateY(-10rem);
   }
 
-  .btn {
+  .offer-btn {
     transform: translateY(-7rem);
   }
 }
 
 section {
   padding: 6rem 0;
-}
-
-.btn {
-  background-color: var(--yellowColor);
-  color: var(--textColor);
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  padding: 1.6rem 2rem;
-  border-radius: 2.1rem;
 }
 
 /* Setup Our Container  */
@@ -1314,34 +1272,21 @@ section {
   font-size: 13px;
 }
 
+.card-buttons{
+  gap: .24rem;
+
+}
+
+.card-buttons button{
+  flex-grow: 1;
+}
+
 /*for button */
-
-.book-now {
-  width: 49%;
-  color: whitesmoke;
-  background-color: #1345a0;
-  aspect-ratio: 4.5;
-  border-radius: 14px;
-}
-
-.view-detail {
-  width: 49%;
-  aspect-ratio: 4.5;
-  color: whitesmoke;
-  background-color: #1345a0;
-  border-radius: 14px;
-}
-
 .show-more-btn::after{
   content: " >>";
 }
 
 /* card ends here */
-
-.single-bottom>button:hover {
-  background-color: #20d2d2;
-  color: white;
-}
 
 .svg-inline--fa.fa-bookmark {
   padding-left: 4px;
@@ -1358,8 +1303,6 @@ section {
 }
 
 .serviceMain:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-  transform: scale(10.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }

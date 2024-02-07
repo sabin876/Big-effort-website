@@ -119,5 +119,3 @@ window.onload = function () {
     }
     playSlide(currentSlide);
 }
-
-

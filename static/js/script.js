@@ -117,7 +117,6 @@ window.onload = function () {
         })
     }
     playSlide(currentSlide);
-<<<<<<< HEAD
 }
 //animation for card
 // Function to check if an element is in the viewport
@@ -147,6 +146,3 @@ function isInViewport(element) {
   // Trigger handleScroll on page load
   handleScroll();
   
-=======
-}
->>>>>>> 3e6c0b241f0ab27e56357ee62d7cfd574e442a3d

@@ -246,6 +246,11 @@ header .container {
   border: none;
   background-color: #ecf6fe;
 }
+@media (min-width:989px) {
+  .close-btn{
+    display: none;
+  }
+}
 
 
 header .container .menu-bar {

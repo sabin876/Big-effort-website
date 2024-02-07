@@ -11,6 +11,7 @@ closeBtn.addEventListener('click', ()=>{
     menu.classList.toggle('active');
 })
 
+
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -118,31 +119,3 @@ window.onload = function () {
     }
     playSlide(currentSlide);
 }
-//animation for card
-// Function to check if an element is in the viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || dorcument.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-  
-  // Function to handle scroll event
-  function handleScroll() {
-    const cards = document.querySelectorAll('.serviceMain');
-    cards.forEach(card => {
-      if (isInViewport(card)) {
-        card.classList.add('visible');
-      }
-    });
-  }
-  
-  // Attach scroll event listener
-  document.addEventListener('scroll', handleScroll);
-  
-  // Trigger handleScroll on page load
-  handleScroll();
-  

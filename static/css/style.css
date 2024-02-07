@@ -242,12 +242,14 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-.close-btn{
+
+.close-btn {
   border: none;
   background-color: #ecf6fe;
 }
+
 @media (min-width:989px) {
-  .close-btn{
+  .close-btn {
     display: none;
   }
 }
@@ -544,7 +546,7 @@ header .container nav ul li a:hover {
     padding: 0px;
     font-size: 16px;
   }
-  
+
   .home-content {
     transform: translateY(-25rem);
   }
@@ -1214,9 +1216,10 @@ section {
 }
 
 .serviceMain {
-  background-color: #BFE6E6;
-  border-radius: 15px;
-  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
 }
 
 .serviceImg {
@@ -1224,19 +1227,17 @@ section {
 }
 
 .serviceImg>img {
-  border-radius: 15px;
   width: 100%;
   height: 200px;
 }
 
+.serviceMain .service-lower {
+  padding: 15px;
+}
+
 .servicesTitle {
   font-weight: bold;
-  color: black;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 3px;
-  font-size: 12px;
+  font-size: 3rem;
 }
 
 .serviceContent {
@@ -1272,17 +1273,17 @@ section {
   font-size: 13px;
 }
 
-.card-buttons{
+.card-buttons {
   gap: .24rem;
 
 }
 
-.card-buttons button{
+.card-buttons button {
   flex-grow: 1;
 }
 
 /*for button */
-.show-more-btn::after{
+.show-more-btn::after {
   content: " >>";
 }
 
@@ -1290,12 +1291,6 @@ section {
 
 .svg-inline--fa.fa-bookmark {
   padding-left: 4px;
-}
-
-.serviceMain {
-  animation-fill-mode: forwards;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .card-column {

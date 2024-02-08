@@ -1256,6 +1256,26 @@ section {
 
 }
 
+.card-column:has(.add-card-btn) {
+  background: #a1999908;
+  box-shadow: 0 0 20px #00000026;
+  border-radius: 10px;
+}
+
+.add-card-btn {
+  border-radius: 50%;
+  border: none;
+  border: 1.5px solid #0000007b;
+  font-size: 85px;
+  background-color: transparent;
+  width: 20rem;
+  aspect-ratio: 1;
+}
+
+.add-card-btn:hover {
+  background-color: #a19d9d12;
+}
+
 .readMoreButton>button:hover {
   background-color: #203cd2;
 

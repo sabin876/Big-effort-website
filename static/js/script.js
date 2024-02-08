@@ -1,13 +1,13 @@
 // //nav bar for mobile view
 const menuBtn = document.querySelector('.menu-bar');
 const menu = document.querySelector('.menu');
-const closeBtn=document.querySelector('.close-btn')
+const closeBtn = document.querySelector('.close-btn')
 
 menuBtn.addEventListener('click', () => {
     menu.classList.add('active');
-   
+
 });
-closeBtn.addEventListener('click', ()=>{
+closeBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
 })
 
@@ -119,3 +119,13 @@ window.onload = function () {
     }
     playSlide(currentSlide);
 }
+
+// Service form modal
+
+const serviceFormModal = document.querySelector(".service-form-modal");
+const addServiceBtn = document.querySelector(".add-card-btn");
+const closeServiceBtn = document.querySelector(".close-form");
+
+addServiceBtn.onclick = () => serviceFormModal.showModal();
+closeServiceBtn.onclick = () => serviceFormModal.close();
+

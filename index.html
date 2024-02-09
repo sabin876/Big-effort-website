@@ -185,6 +185,28 @@
       </div>
     </div>
 
+    <!-- Service add form -->
+    <dialog class="service-form-modal p-4">
+      <h3>Add New Service</h3>
+      <form>
+        <div class="mb-3">
+          <label for="title" class="title-label">Title</label>
+          <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelp">
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Short service description" id="service-desc"></textarea>
+          <label for="service-desc">Short service description</label>
+        </div>
+        <div>
+          <label for="template-image" class="form-label">Choose template Image</label>
+          <input class="form-control form-control-lg" id="template-image" type="file">
+        </div>
+        <button type="submit" class="std-btn">Submit</button>
+        <button type="button" class="close-form btn-danger">X</button>
+      </form>
+    </dialog>
+    <!-- Service add form ends-->
+
     <div class="text-center my-3">
       <a href="#" class=" show-more-btn link-underline-primary fs-1">Show More</a>
     </div>

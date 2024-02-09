@@ -350,7 +350,7 @@ header .container nav ul li a:hover {
 }
 
 .home .container {
-  height: 79%;
+  height: 86%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1320,4 +1320,16 @@ section {
 .serviceMain:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
+}
+/*for wrapping all sevices in all-services class*/
+@media(max-width:767px){
+  .all-services {
+    transform: translateY(-41rem);
+  }
+  .all-about{
+    transform: translateY(-39rem);
+  }
+  .all-gallery{
+    transform: translateY(-20rem);
+  }
 }

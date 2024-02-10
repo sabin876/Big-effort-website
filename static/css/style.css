@@ -370,7 +370,7 @@ header .container nav ul li a:hover {
 .home .container .home-text h1 {
   color: var(--headingColor);
   font-size: 5.8rem;
-  margin: 1rem 0 32rem 0;
+  margin: 1rem 0 17rem 0;
 }
 
 
@@ -1369,15 +1369,18 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
+
 /*for wrapping all sevices in all-services class*/
-@media(max-width:767px){
+@media(max-width:767px) {
   .all-services {
     transform: translateY(-41rem);
   }
-  .all-about{
+
+  .all-about {
     transform: translateY(-39rem);
   }
-  .all-gallery{
+
+  .all-gallery {
     transform: translateY(-20rem);
   }
 }

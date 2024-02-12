@@ -13,3 +13,14 @@
   filter: brightness(0.9);
   color: white;
 }
+
+.blur-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100dvh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}

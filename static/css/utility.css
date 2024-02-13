@@ -24,3 +24,23 @@
   width: 100%;
   backdrop-filter: blur(10px);
 }
+
+.msg {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #16b4b4;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+
+  transform: translateX(-150%);
+  transition: all 200ms ease-in-out;
+
+  z-index: 99999999;
+}
+
+.show {
+  transform: translateX(0);
+}

@@ -27,10 +27,13 @@
 
 <body>
 
+
   <div class="page-buffer-loader">
     <img src="./static/img/logo.png" width="150" alt="big effor logo">
 
   </div>
+
+  <p class="msg show">This is a message</p>
 
   <!-- Page Loader with Image -->
 
@@ -470,7 +473,12 @@
           break;
       }
     }
-    //nav bar for mobile view
+
+    // Message popup
+    const message = document.querySelector(".msg");
+    setTimeout(() => {
+      message.classList.remove("show");
+    }, 2000)
 
   </script>
 

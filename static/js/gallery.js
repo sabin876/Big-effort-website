@@ -15,7 +15,10 @@ const imgPreviewCloseBtn = document.querySelector(".preview-close");
 const imgPreviewNextBtn = document.querySelector(".next-img");
 const imgPreviewPrevBtn = document.querySelector(".prev-img");
 
-imgPreviewCloseBtn.onclick = () => {
+let onOverlayClickEvents = [];
+
+
+function closePreview() {
     setImage(undefined);
     imgPreviewDiv.style.display = "none";
     blurOverlay.style.display = "none";
@@ -54,3 +57,11 @@ allImages.forEach(img => {
 
 imgPreviewNextBtn.onclick = setNextImage;
 imgPreviewPrevBtn.onclick = setPreviousImage;
+imgPreviewCloseBtn.onclick = closePreview;
+
+onOverlayClickEvents.push(closePreview);
+blurOverlay.onclick = () => {
+    onOverlayClickEvents.forEach(event => {
+        event();
+    })
+}
